@@ -1,30 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Job Listings | AdelBuddy</title>
-    <link rel="stylesheet" href="css/styles.css" />
+  <meta charset="UTF-8" />
+  <title>AdelBuddy - Jobs</title>
+  <link rel="stylesheet" href="css/styles.css" />
+  <script defer src="data.js"></script>
+  <script defer src="js/jobs.js"></script>
 </head>
-
 <body>
-    <header>
-        <h1>Student-Friendly Job Board</h1>
-        <p>Discover local part-time and casual job opportunities around Adelaide.</p>
-        <nav>
-            <ul>
-                <li><a href="index.html">🏠 Home</a></li>
-                <li><a href="listings.html">📋 Resources</a></li>
-                <li><a href="housing.html">🏡 Housing</a></li>
-                <li><a href="skills.html">🤝 Skills</a></li>
-            </ul>
-        </nav>
-    </header>
+  <header>
+    <h1>💼 Job Opportunities</h1>
+    <p>Explore part-time and full-time jobs in Adelaide.</p>
+  </header>
 
-    <div id="job-listings"></div>
+  <nav>
+    <ul>
+      <li><a href="index.html">🏠 Home</a></li>
+      <li><a href="listings.html">📋 Resources</a></li>
+      <li><a href="jobs.html" class="active">💼 Jobs</a></li>
+      <li><a href="housing.html">🏡 Housing</a></li>
+      <li><a href="skills.html">🤝 Skills</a></li>
+    </ul>
+  </nav>
+  
 
-    <script src="js/jobs.js"></script>
+  <main id="jobs-container">    
+    <!-- Job cards inserted here dynamically -->
+  </main>
+
+  <footer>
+    <p>&copy; 2025 AdelBuddy. All rights reserved.</p>
+  </footer>
 </body>
-
 </html>

@@ -1,32 +1,25 @@
-document.addEventListener('DOMContentLoaded', () => {
-  const jobListings = [
-    {
-      title: "Part-Time Barista",
-      company: "Bean Time Café",
-      location: "Rundle Street, Adelaide",
-      description: "Seeking friendly barista with basic coffee skills. Students welcome.",
-      applyLink: "mailto:beantime@example.com"
-    },
-    {
-      title: "Casual Retail Assistant",
-      company: "EcoMart",
-      location: "Central Market, Adelaide",
-      description: "Evening shifts available. No prior experience required.",
-      applyLink: "mailto:ecomartjobs@example.com"
-    }
-  ];
+// frontend/js/jobs.js
 
-  const container = document.getElementById('job-listings');
+document.addEventListener("DOMContentLoaded", () => {
+  const container = document.getElementById("jobs-container");
+  if (!container) return;
 
-  jobListings.forEach(job => {
-    const el = document.createElement('div');
-    el.classList.add('listing-item');
-    el.innerHTML = `
-      <h3>${job.title} <small>– ${job.company}</small></h3>
-      <p><strong>Location:</strong> ${job.location}</p>
-      <p>${job.description}</p>
-      <a href="${job.applyLink}" target="_blank">Apply Now</a>
+  if (jobs.length === 0) {
+    container.innerHTML = '<p class="no-data-message">No job listings available at the moment.</p>';
+    return;
+  }
+
+  let html = '';
+  jobs.forEach((item) => {
+    html += `
+      <div class="listing-item">
+        <h3>${item.title}</h3>
+        <p>${item.description}</p>
+        <p><strong>Location:</strong> ${item.location}</p>
+        ${item.contact ? `<p><strong>Contact:</strong> <a href="mailto:${item.contact}">${item.contact}</a></p>` : ''}
+      </div>
     `;
-    container.appendChild(el);
   });
+
+  container.innerHTML = html;
 });

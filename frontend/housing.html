@@ -1,30 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Housing & Rentals | AdelBuddy</title>
-    <link rel="stylesheet" href="css/styles.css" />
+  <meta charset="UTF-8" />
+  <title>AdelBuddy - Housing</title>
+  <link rel="stylesheet" href="css/styles.css" />
+  <script defer src="data.js"></script>
+  <script defer src="js/housing.js"></script>
 </head>
-
 <body>
-    <header>
-        <h1>Find Shared Accommodation</h1>
-        <p>Affordable housing options and roommates around Adelaide.</p>
-        <nav>
-            <ul>
-                <li><a href="index.html">🏠 Home</a></li>
-                <li><a href="listings.html">📋 Resources</a></li>
-                <li><a href="jobs.html">🧑‍💻 Jobs </a></li>
-                <li><a href="skills.html">🤝 Skills</a></li>
-            </ul>
-        </nav>
-    </header>
+  <header>
+    <h1>🏡 Housing Listings</h1>
+    <p>Find your next home or room share in Adelaide.</p>
+  </header>
 
-    <div id="housing-listings"></div>
+  <nav>
+    <ul>
+      <li><a href="index.html">🏠 Home</a></li>
+      <li><a href="listings.html">📋 Resources</a></li>
+      <li><a href="jobs.html">💼 Jobs</a></li>
+      <li><a href="housing.html" class="active">🏡 Housing</a></li>
+      <li><a href="skills.html">🤝 Skills</a></li>
+    </ul>
+  </nav>
+  
 
-    <script src="js/housing.js"></script>
+  <main id="housing-container">
+    <!-- Housing cards inserted here dynamically -->
+  </main>
+
+  <footer>
+    <p>&copy; 2025 AdelBuddy. All rights reserved.</p>
+  </footer>
 </body>
-
 </html>

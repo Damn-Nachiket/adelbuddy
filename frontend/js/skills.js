@@ -1,22 +1,25 @@
-document.addEventListener('DOMContentLoaded', () => {
-  const container = document.getElementById('skills-list');
+// frontend/js/skills.js
 
-  if (!skills || skills.length === 0) {
-    container.innerHTML = '<p>No skill offers yet. Be the first to add!</p>';
+document.addEventListener("DOMContentLoaded", () => {
+  const container = document.getElementById("skills-container");
+  if (!container) return;
+
+  if (skills.length === 0) {
+    container.innerHTML = '<p class="no-data-message">No skill exchanges available at the moment.</p>';
     return;
   }
 
-  skills.forEach(entry => {
-    const card = document.createElement('div');
-    card.className = 'skill-card';
-
-    card.innerHTML = `
-      <h3>${entry.name}</h3>
-      <p><strong>Can Offer:</strong> ${entry.skill}</p>
-      <p><strong>Wants Help With:</strong> ${entry.wants}</p>
-      <p><strong>Contact:</strong> ${entry.contact}</p>
+  let html = '';
+  skills.forEach((item) => {
+    html += `
+      <div class="card">
+        <h3>${item.name}</h3>
+        <p><strong>Skill Offered:</strong> ${item.skill}</p>
+        <p><strong>Looking For:</strong> ${item.wants}</p>
+        ${item.contact ? `<p><strong>Contact:</strong> <a href="mailto:${item.contact}">${item.contact}</a></p>` : ''}
+      </div>
     `;
-
-    container.appendChild(card);
   });
+
+  container.innerHTML = html;
 });

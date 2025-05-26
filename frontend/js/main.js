@@ -1,20 +1,27 @@
-document.addEventListener('DOMContentLoaded', () => {
-  // Existing nav highlight code (if any)...
+// frontend/js/main.js
 
-  const listingsContainer = document.getElementById('listings');
+document.addEventListener("DOMContentLoaded", () => {
+  const resourcesContainer = document.getElementById("resources-container");
+  if (!resourcesContainer) return;
 
-  if (listingsContainer && typeof localResources !== 'undefined') {
-    localResources.forEach(item => {
-      const div = document.createElement('div');
-      div.className = 'listing-item';
-      div.innerHTML = `
-        <h3>${item.title} <small>(${item.type})</small></h3>
-        <p>${item.description}</p>
-        <p><strong>Location:</strong> ${item.location}</p>
-        ${item.date ? `<p><strong>Date:</strong> ${item.date}</p>` : ''}
-        ${item.contact ? `<p><strong>Contact:</strong> ${item.contact}</p>` : ''}
-      `;
-      listingsContainer.appendChild(div);
-    });
+  if (resources.length === 0) {
+    resourcesContainer.innerHTML = '<p class="no-data-message">No resources available at the moment.</p>';
+    return;
   }
+
+  let html = '';
+  resources.forEach((item) => {
+    html += `
+      <div class="listing-item">
+        <h3>${item.title}</h3>
+        <p><strong>Type:</strong> ${item.type}</p>
+        <p>${item.description}</p>
+        <p><strong>Location:</strong> ${item.location || 'N/A'}</p>
+        ${item.contact ? `<p><strong>Contact:</strong> <a href="mailto:${item.contact}">${item.contact}</a></p>` : ''}
+        ${item.date ? `<p><strong>Date:</strong> ${item.date}</p>` : ''}
+      </div>
+    `;
+  });
+
+  resourcesContainer.innerHTML = html;
 });

@@ -1,32 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8">
-  <title>Skill Swap Board</title>
-  <link rel="stylesheet" href="css/styles.css">
+  <meta charset="UTF-8" />
+  <title>AdelBuddy - Skills Exchange</title>
+  <link rel="stylesheet" href="css/styles.css" />
+  <script defer src="data.js"></script>
+  <script defer src="js/skills.js"></script>
 </head>
-
-
 <body>
-    <nav>
-        <ul>
-            <li><a href="index.html">🏠 Home</a></li>
-            <li><a href="listings.html">📋 Resources</a></li>
-            <li><a href="jobs.html">💼 Jobs</a></li>
-            <li><a href="housing.html">🏡 Housing</a></li>
-            <li><a href="skills.html">🤝 Skills</a></li>
-        </ul>
-    </nav>
+  <header>
+    <h1>🤝 Skills Exchange</h1>
+    <p>Share your skills or find help from fellow community members.</p>
+  </header>
 
-    <main>
-        <h1>🤝 Skill Swap Board</h1>
-        <div id="skills-list"></div>
-    </main>
-<!-- REMOVE THIS from bottom of body -->
-<script src="data.js"></script>
-<script src="js/skills.js"></script>
+  <nav>
+    <ul>
+      <li><a href="index.html">🏠 Home</a></li>
+      <li><a href="listings.html">📋 Resources</a></li>
+      <li><a href="jobs.html">💼 Jobs</a></li>
+      <li><a href="housing.html">🏡 Housing</a></li>
+      <li><a href="skills.html" class="active">🤝 Skills</a></li>
+    </ul>
+  </nav>
+  
 
+  <main id="skills-container">
+    <!-- Skills cards inserted here dynamically -->
+  </main>
+
+  <footer>
+    <p>&copy; 2025 AdelBuddy. All rights reserved.</p>
+  </footer>
 </body>
-
 </html>

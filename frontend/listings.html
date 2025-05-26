@@ -1,45 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <title>Resources - AdelBuddy</title>
-    <link rel="stylesheet" href="css/styles.css">
+  <meta charset="UTF-8" />
+  <title>AdelBuddy - Resources</title>
+  <link rel="stylesheet" href="css/styles.css" />
+  <script defer src="data.js"></script>
+  <script defer src="js/main.js"></script>
 </head>
-
 <body>
-    <header>
-        <h1>AdelBuddy Resources</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">🏠 Home</a></li>
-                <li><a href="housing.html">🏡 Housing</a></li>
-                <li><a href="jobs.html">🧑‍💻 Jobs </a></li>
-                <li><a href="skills.html">🤝 Skills</a></li>
-            </ul>
-        </nav>
+  <header>
+    <h1>📋 Resources</h1>
+    <p>Community-driven listings for Jobs, Housing, and Events.</p>
+  </header>
 
-    </header>
+  <nav>
+    <ul>
+      <li><a href="index.html">🏠 Home</a></li>
+      <li><a href="listings.html" class="active">📋 Resources</a></li>
+      <li><a href="jobs.html">💼 Jobs</a></li>
+      <li><a href="housing.html">🏡 Housing</a></li>
+      <li><a href="skills.html">🤝 Skills</a></li>
+    </ul>
+  </nav>
+  
 
-    <main>
-        <h2>Explore Free & Local Opportunities</h2>
-        <p>Here you'll soon find community-driven listings for:</p>
-        <ul>
-            <li>💼 Local Job Listings</li>
-            <li>🏠 Housing & Roommates</li>
-            <li>🎉 Free Events</li>
-            <li>🤝 Skill Swap Board</li>
-        </ul>
-    </main>
+  <main id="resources-container">
+    <!-- Resource cards inserted here dynamically -->
+  </main>
 
-    <div id="listings"></div>
-
-    <footer>
-        <p>AdelBuddy © 2025 – Open for all 💙</p>
-    </footer>
-    <script src="js/data.js"></script>
-    <script src="js/main.js"></script>
-
+  <footer>
+    <p>&copy; 2025 AdelBuddy. All rights reserved.</p>
+  </footer>
 </body>
-
 </html>
