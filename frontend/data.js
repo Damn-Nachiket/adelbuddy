@@ -26,3 +26,18 @@ const localResources = [
     contact: "roomshare@email.com",
   },
 ];
+
+const skills = [
+  {
+    name: "Aman",
+    skill: "Video Editing",
+    wants: "Website Development Help",
+    contact: "aman@email.com"
+  },
+  {
+    name: "Sarah",
+    skill: "English Tutoring",
+    wants: "Graphic Design for her assignment",
+    contact: "sarah@email.com"
+  }
+];
