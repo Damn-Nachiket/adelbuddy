@@ -129,7 +129,7 @@ footer p {
   }
 }
 
-#skill-form-section {
+/* #skill-form-section {
   background: #eef6ff;
   padding: 20px;
   border-radius: 8px;
@@ -156,6 +156,83 @@ footer p {
 #skill-form button:hover {
   background-color: #004566;
 }
+
+#job-form-section {
+  background: #eef6ff;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  box-shadow: 0 0 8px rgba(0, 90, 135, 0.1);
+}
+
+#job-form-section input, #job-form-section button {
+  display: block;
+  width: 100%;
+  margin: 10px 0;
+  padding: 10px;
+  font-size: 1em;
+}
+
+#job-form-section button {
+  background-color: #005a87;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+#job-form-section button:hover {
+  background-color: #004566;
+} */
+
+/* Form Container */
+form {
+  max-width: 600px;
+  margin: 20px auto;
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+/* Form inputs */
+form input[type="text"],
+form input[type="email"],
+form textarea {
+  width: 100%;
+  padding: 10px 12px;
+  margin-bottom: 15px;
+  border: 1.5px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-family: inherit;
+  transition: border-color 0.3s ease;
+}
+
+form input[type="text"]:focus,
+form input[type="email"]:focus,
+form textarea:focus {
+  border-color: #005a87;
+  outline: none;
+}
+
+/* Submit button */
+form button[type="submit"] {
+  background-color: #005a87;
+  color: white;
+  font-weight: 600;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+form button[type="submit"]:hover {
+  background-color: #003f5a;
+}
+
 
 .delete-btn {
   background-color: #9b59b6;

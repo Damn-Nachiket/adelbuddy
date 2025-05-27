@@ -2,16 +2,16 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <link rel="icon" href="assets/favicon_io/favicon.ico" type="image/x-icon">
-  <title>AdelBuddy - Jobs</title>
+  <link rel="icon" href="assets/favicon_io/favicon.ico" type="image/x-icon" />
+  <title>AdelBuddy - Job Listings</title>
   <link rel="stylesheet" href="css/styles.css" />
   <script defer src="data.js"></script>
   <script defer src="js/jobs.js"></script>
 </head>
 <body>
   <header>
-    <h1>💼 Job Opportunities</h1>
-    <p>Explore part-time and full-time jobs in Adelaide.</p>
+    <h1>💼 Job Listings</h1>
+    <p>Find work or post job opportunities in the community.</p>
   </header>
 
   <nav>
@@ -23,11 +23,23 @@
       <li><a href="skills.html">🤝 Skills</a></li>
     </ul>
   </nav>
-  
 
-  <main id="jobs-container">    
-    <!-- Job cards inserted here dynamically -->
+
+
+  <main id="jobs-container">
+    <!-- Job cards will be dynamically inserted here -->
   </main>
+
+    <section id="job-form-section">
+    <h2>📝 Post a Job Listing</h2>
+    <form id="job-form">
+      <input type="text" id="job-title" placeholder="Job Title" required />
+      <input type="text" id="job-description" placeholder="Job Description" required />
+      <input type="text" id="job-location" placeholder="Location" required />
+      <input type="email" id="job-contact" placeholder="Contact Email" required />
+      <button type="submit">Submit</button>
+    </form>
+  </section>
 
   <footer>
     <p>&copy; 2025 AdelBuddy. All rights reserved.</p>
