@@ -128,3 +128,47 @@ footer p {
     margin: 10px 0;
   }
 }
+
+#skill-form-section {
+  background: #eef6ff;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  box-shadow: 0 0 8px rgba(0, 90, 135, 0.1);
+}
+
+#skill-form input, #skill-form button {
+  display: block;
+  width: 100%;
+  margin: 10px 0;
+  padding: 10px;
+  font-size: 1em;
+}
+
+#skill-form button {
+  background-color: #005a87;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+#skill-form button:hover {
+  background-color: #004566;
+}
+
+.delete-btn {
+  background-color: #9b59b6;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.9em;
+  float: right;
+  margin-top: -35px;
+}
+
+.delete-btn:hover {
+  background-color: #884ea0;
+}
